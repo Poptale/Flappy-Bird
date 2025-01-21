@@ -1,0 +1,38 @@
+.container img{
+    position: absolute;
+    top: 175px;
+    left: 126px;
+    height: 150px;
+    width: 200px;
+    scale: 0.5;
+    opacity: 0.88;
+    pointer-events: none;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container h1{
+    font-size: 80px;
+    color: whitesmoke;
+    -webkit-text-stroke: 4px black;
+    line-height: 80px;
+}
+
+.other-buttons{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.container img:nth-child(1){
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 200%;
+    object-fit: cover;
+    object-position: 0%;
+}

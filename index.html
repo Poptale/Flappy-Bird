@@ -1,30 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      rel="shortcut icon"
+      href="https://sm.ign.com/t/ign_nordic/cover/f/flappy-bir/flappy-bird_p9sx.300.jpg"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flappy Bird | Menu</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="menu.css">
-</head>
-<body>
-    <img class="bgImage" src="Sprites/bgImage.jpeg" alt="">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <img class="bgImage" src="Sprites/bgImage.jpeg" alt="" />
     <div class="container">
-        <!-- <div class="play-menu"> -->
-            <h1 class="title">FLAPPY BIRD</h1>
-                <img class="flappyBird" src="Sprites/flappybird.gif" alt="">
-            <div class="button">
-                <a href="game.html"><button><p>Play</p></button></a>
-                <button><p>Options</p></button>
-                <button><p>Settings</p></button>
-            </div>
-            <div class="other-buttons">
-                <button class="musicc"><p>Music ON</p></button>
-                <button><p>Stats</p></button>
-            </div>
+      <button class="coins">
+        <p><img id="cImg" src="Sprites/coin.webp" alt="" />COINS : 00</p>
+      </button>
+      <button class="coins high">
+        <p><img id="cImg" src="Sprites/coin.webp" alt="" />HIGH : 00</p>
+      </button>
+      <h1 class="title">FLAPPY BIRD</h1>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="flappyBird" src="Sprites/flappybird.gif" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="flappyBird"
+              src="bird skins/5daa186b3cf119a.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="flappyBird"
+              src="bird skins/aeOtur7QeyI-QLth7r228YQ_bXQhyA--QPq_BrwJziM.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img class="flappyBird" src="bird skins/images.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="flappyBird"
+              src="bird skins/png-clipart-red-flappy-bird-flappy-bird-blue-t-shirt-bird-game-animals-thumbnail.png"
+              alt=""
+            />
+          </div>
         </div>
+        <button class="swiper-button-next" id="nextBtn">
+          <img id="nextImg" src="Sprites/next.png" alt="" />
+        </button>
+        <button class="swiper-button-prev" id="nextBtn2">
+          <img id="nextImg2" src="Sprites/next.png" alt="" />
+        </button>
+      </div>
+
+      <div class="button">
+        <a href="game.html"
+          ><button><p>Play</p></button></a
+        >
+        <button><p>Options</p></button>
+        <button><p>Settings</p></button>
+      </div>
+      <div class="other-buttons">
+        <button class="musicc"><p>Music ON</p></button>
+        <button><p>Stats</p></button>
+      </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
     <script src="game.js"></script>
-</body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".mySwiper", {
+          loop: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      });
+    </script>
+  </body>
 </html>

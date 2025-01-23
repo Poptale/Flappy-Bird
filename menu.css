@@ -1,10 +1,21 @@
+@font-face {
+    font-family: bird;
+    src: url(flappy-bird-font.ttf);
+}
+
+@font-face {
+    font-family: pixel;
+    src: url(Pixel\ Game.otf);
+}
+
+
 .container img{
     position: absolute;
-    top: 175px;
+    top: 195px;
     left: 126px;
     height: 150px;
     width: 200px;
-    scale: 0.5;
+    scale: 0.4;
     opacity: 0.88;
     pointer-events: none;
     object-fit: cover;
@@ -12,10 +23,11 @@
 }
 
 .container h1{
-    font-size: 80px;
+    font-size: 110px;
     color: whitesmoke;
-    -webkit-text-stroke: 4px black;
+    -webkit-text-stroke: 0.4px black;
     line-height: 80px;
+    font-family: pixel;
 }
 
 .other-buttons{
@@ -28,11 +40,17 @@
 
 .container img:nth-child(1){
     height: 200%;
+    max-width: 200px;
+    max-height: 150px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 20px;
+    left: 0px;
     transform: translate(-50%, -50%);
     width: 200%;
     object-fit: cover;
     object-position: 0%;
+}
+
+.swiper-slide{
+    left: 100px;
 }

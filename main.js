@@ -171,4 +171,3 @@ function jump(){
         jumpCount++;
     },10);
 };
-

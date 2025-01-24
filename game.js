@@ -13,3 +13,4 @@ musicBtn.addEventListener("click", () => {
         musicPlaying = false;
     }
 });
+

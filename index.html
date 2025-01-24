@@ -1,19 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link
-      rel="shortcut icon"
-      href="https://sm.ign.com/t/ign_nordic/cover/f/flappy-bir/flappy-bird_p9sx.300.jpg"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://sm.ign.com/t/ign_nordic/cover/f/flappy-bir/flappy-bird_p9sx.300.jpg"/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="menu.css"/>
     <title>Flappy Bird | Menu</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="menu.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
   </head>
   <body>
     <img class="bgImage" src="Sprites/bgImage.jpeg" alt="" />
@@ -22,7 +14,7 @@
         <p><img id="cImg" src="Sprites/coin.webp" alt="" />COINS : 00</p>
       </button>
       <button class="coins high">
-        <p><img id="cImg" src="Sprites/coin.webp" alt="" />HIGH : 00</p>
+        <p><img id="hImg" src="Sprites//High score icon.png" alt="" />HIGH : 00</p>
       </button>
       <h1 class="title">FLAPPY BIRD</h1>
 
@@ -64,10 +56,16 @@
         </button>
       </div>
 
+      <div class="selection">
+        <div class="amount-container">
+          <!-- <img src="Sprites/coin.webp" alt="" id="coin-amount-logo">
+          <h1 class="coin-amount">400</h1> -->
+        </div>
+        <button class="selected">SELECTED</button>
+      </div>
+
       <div class="button">
-        <a href="game.html"
-          ><button><p>Play</p></button></a
-        >
+        <a href="game.html"><button><p>Play</p></button></a>
         <button><p>Options</p></button>
         <button><p>Settings</p></button>
       </div>
